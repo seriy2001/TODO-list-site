@@ -1,0 +1,21 @@
+{% extends "mysite/layout.html" %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block content %}
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">{% trans "Log into your account" %}</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">{% trans "Log in" %}</button>
+            </div>
+        </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">{% trans "don't have an account?" %} <a class="ml-2" href="{% url 'reg' %}">{% trans "Sign up" %}</a></small>
+        </div>
+    </div>
+{% endblock %}

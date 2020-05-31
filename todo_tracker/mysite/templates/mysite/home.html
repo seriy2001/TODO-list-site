@@ -1,0 +1,41 @@
+{% extends "mysite/layout.html" %}
+{% load i18n %}
+
+{% block content %}
+
+    <legend class="border-bottom mb-4">{% trans "Public tasks" %}</legend>
+    {% for task in tasks %}
+        {% if task.public == True %}
+            <div class="card-header mb-4">
+                <img class="rounded-circle article-img" src="{{ task.user.profile.image.url }}">
+                <a class="mr-2" href="#">{{ task.user }}</a>
+                {% if task.duedate %}
+                    <small class="text-muted">{{ task.startdate|date:"N d, H:i" }} <b>{% trans "till" %}</b> {{ task.duedate|date:"N d, H:i" }}</small>
+                {% else %}
+                    <small class="text-muted">{{ task.startdate|date:"N d, H:i" }}</small>
+                {% endif %}
+                {% if task.completion == True %}
+                    <span class="badge badge-success badge-secondary ml-2">{% trans "Completed" %}</span>
+                {% elif task.canceled == True %}
+                    <span class="badge badge-danger badge-secondary ml-2">{% trans "Cancelled" %}</span>
+                {% else %}
+                    <span class="badge badge-warning ml-2">{% trans "Not completed" %}</span>
+                {% endif %}
+
+                {% if task.user == user %}
+                    <span class="float-right mt-lg-3 mr-2">
+                    <a class="btn btn-secondary btn-sm ml-lg-5" href="{% url 'edit_task' task.id %}">&#9998;</a>
+                    <a class="btn btn-danger btn-sm" href="{% url 'delete_task' task.id %}">{% trans "Delete" %}</a>
+                </span>
+                {% endif %}
+                <div class="card-body row">
+                    <div class="col-sm-1 ml-n2"></div>
+                    <div class="col-sm-11 mt-n2">
+                        <h4 class="article-title ml-4">{{ task.title }}</h4>
+                        <p class="article-content ml-4">{{ task.note }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor%}
+{% endblock %}

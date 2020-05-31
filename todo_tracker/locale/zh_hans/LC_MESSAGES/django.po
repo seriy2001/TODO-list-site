@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-22 14:40+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\mysite\templates\mysite\edit_task.html:10
+msgid "Edit task"
+msgstr "编辑任务"
+
+#: .\mysite\templates\mysite\edit_task.html:14
+msgid "Confirm changes"
+msgstr "确认变更"
+
+#: .\mysite\templates\mysite\home.html:6
+#: .\mysite\templates\mysite\layout.html:21
+msgid "Public tasks"
+msgstr "公开任务"
+
+#: .\mysite\templates\mysite\home.html:13
+#: .\mysite\templates\mysite\private_tasks.html:12
+msgid "till"
+msgstr "截至"
+
+#: .\mysite\templates\mysite\home.html:18
+#: .\mysite\templates\mysite\private_tasks.html:17
+msgid "Completed"
+msgstr "已完成"
+
+#: .\mysite\templates\mysite\home.html:20
+#: .\mysite\templates\mysite\private_tasks.html:19
+msgid "Cancelled"
+msgstr "已取消"
+
+#: .\mysite\templates\mysite\home.html:22
+#: .\mysite\templates\mysite\private_tasks.html:21
+msgid "Not completed"
+msgstr "未完成"
+
+#: .\mysite\templates\mysite\home.html:28
+#: .\mysite\templates\mysite\private_tasks.html:26
+#: .\mysite\templates\mysite\task_confirm_delete.html:14
+msgid "Delete"
+msgstr "删除"
+
+#: .\mysite\templates\mysite\layout.html:23
+msgid "Private tasks"
+msgstr "个人任务"
+
+#: .\mysite\templates\mysite\layout.html:29
+#: .\mysite\templates\mysite\task_form.html:14
+msgid "Create task"
+msgstr "创建任务"
+
+#: .\mysite\templates\mysite\layout.html:30
+msgid "My Profile"
+msgstr "我的帐户"
+
+#: .\mysite\templates\mysite\layout.html:31
+msgid "Logout"
+msgstr "登出"
+
+#: .\mysite\templates\mysite\layout.html:33
+msgid "Login"
+msgstr "登陆"
+
+#: .\mysite\templates\mysite\layout.html:34
+msgid "Register"
+msgstr "注册"
+
+#: .\mysite\templates\mysite\private_tasks.html:5
+msgid "My private tasks"
+msgstr "我的个人任务"
+
+#: .\mysite\templates\mysite\task_confirm_delete.html:10
+msgid "Delete task"
+msgstr "删除任务"
+
+#: .\mysite\templates\mysite\task_confirm_delete.html:11
+msgid "Are you sure you want to delete task"
+msgstr "您是否确认删除任务"
+
+#: .\mysite\templates\mysite\task_confirm_delete.html:15
+msgid "Cancel"
+msgstr "取消"
+
+#: .\mysite\templates\mysite\task_form.html:10
+msgid "New task"
+msgstr "新任务"
+
+#: .\users\templates\users\login.html:10
+msgid "Log into your account"
+msgstr "登陆您的帐户"
+
+#: .\users\templates\users\login.html:14
+#: .\users\templates\users\register.html:18
+msgid "Log in"
+msgstr "登陆"
+
+#: .\users\templates\users\login.html:18
+msgid "don't have an account?"
+msgstr "没有帐户?"
+
+#: .\users\templates\users\login.html:18
+msgid "Sign up"
+msgstr "注册"
+
+#: .\users\templates\users\logout.html:5
+msgid "You've been logged out"
+msgstr "您已登出"
+
+#: .\users\templates\users\logout.html:8
+msgid "Log in again?"
+msgstr "重新登陆"
+
+#: .\users\templates\users\profile.html:17
+msgid "Profile info"
+msgstr "帐户信息"
+
+#: .\users\templates\users\profile.html:22
+msgid "Update"
+msgstr "更改"
+
+#: .\users\templates\users\register.html:10
+msgid "Regitser now"
+msgstr "立即注册"
+
+#: .\users\templates\users\register.html:14
+msgid "Sign Up"
+msgstr "注册"
+
+#: .\users\templates\users\register.html:18
+msgid "already have an account? "
+msgstr "已有帐户？ "

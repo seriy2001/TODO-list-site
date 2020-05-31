@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-22 13:26+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%"
+"100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\mysite\templates\mysite\edit_task.html:10
+msgid "Edit task"
+msgstr "Редактировать задачу"
+
+#: .\mysite\templates\mysite\edit_task.html:14
+msgid "Confirm changes"
+msgstr "Подтвердить изменения"
+
+#: .\mysite\templates\mysite\home.html:6
+#: .\mysite\templates\mysite\layout.html:21
+msgid "Public tasks"
+msgstr "Публичные задачи"
+
+#: .\mysite\templates\mysite\home.html:13
+#: .\mysite\templates\mysite\private_tasks.html:12
+msgid "till"
+msgstr "до"
+
+#: .\mysite\templates\mysite\home.html:18
+#: .\mysite\templates\mysite\private_tasks.html:17
+msgid "Completed"
+msgstr "Сделано"
+
+#: .\mysite\templates\mysite\home.html:20
+#: .\mysite\templates\mysite\private_tasks.html:19
+msgid "Cancelled"
+msgstr "Отменено"
+
+#: .\mysite\templates\mysite\home.html:22
+#: .\mysite\templates\mysite\private_tasks.html:21
+msgid "Not completed"
+msgstr "Не сделано"
+
+#: .\mysite\templates\mysite\home.html:28
+#: .\mysite\templates\mysite\private_tasks.html:26
+#: .\mysite\templates\mysite\task_confirm_delete.html:14
+msgid "Delete"
+msgstr "Удалить"
+
+#: .\mysite\templates\mysite\layout.html:23
+msgid "Private tasks"
+msgstr "Частные задачи"
+
+#: .\mysite\templates\mysite\layout.html:29
+#: .\mysite\templates\mysite\task_form.html:14
+msgid "Create task"
+msgstr "Создать задачу"
+
+#: .\mysite\templates\mysite\layout.html:30
+msgid "My Profile"
+msgstr "Мой профиль"
+
+#: .\mysite\templates\mysite\layout.html:31
+msgid "Logout"
+msgstr "Выйти"
+
+#: .\mysite\templates\mysite\layout.html:33
+msgid "Login"
+msgstr "Войти"
+
+#: .\mysite\templates\mysite\layout.html:34
+msgid "Register"
+msgstr "Зарегистрироваться"
+
+#: .\mysite\templates\mysite\private_tasks.html:5
+msgid "My private tasks"
+msgstr "Мои частные задачи"
+
+#: .\mysite\templates\mysite\task_confirm_delete.html:10
+msgid "Delete task"
+msgstr "Удалить задачу"
+
+#: .\mysite\templates\mysite\task_confirm_delete.html:11
+msgid "Are you sure you want to delete task"
+msgstr "Вы уверены что хотите удалить задачу"
+
+#: .\mysite\templates\mysite\task_confirm_delete.html:15
+msgid "Cancel"
+msgstr "Отменить"
+
+#: .\mysite\templates\mysite\task_form.html:10
+msgid "New task"
+msgstr "Новая задача"
+
+#: .\users\templates\users\login.html:10
+msgid "Log into your account"
+msgstr "Войти в аккаунт"
+
+#: .\users\templates\users\login.html:14
+#: .\users\templates\users\register.html:18
+#, fuzzy
+#| msgid "Login"
+msgid "Log in"
+msgstr "Войти"
+
+#: .\users\templates\users\login.html:18
+msgid "don't have an account?"
+msgstr "нет аккаунта?"
+
+#: .\users\templates\users\login.html:18
+msgid "Sign up"
+msgstr "Зарегистрироваться"
+
+#: .\users\templates\users\logout.html:5
+msgid "You've been logged out"
+msgstr "Вы вышли из аккаунта"
+
+#: .\users\templates\users\logout.html:8
+msgid "Log in again?"
+msgstr "Войти снова"
+
+#: .\users\templates\users\profile.html:17
+msgid "Profile info"
+msgstr "Информация профиля"
+
+#: .\users\templates\users\profile.html:22
+msgid "Update"
+msgstr "Сохранить изменения"
+
+#: .\users\templates\users\register.html:10
+#, fuzzy
+#| msgid "Register"
+msgid "Regitser now"
+msgstr "Зарегистрироваться"
+
+#: .\users\templates\users\register.html:14
+msgid "Sign Up"
+msgstr "Зарегистрироваться"
+
+#: .\users\templates\users\register.html:18
+msgid "already have an account? "
+msgstr "есть аккаунт? "
