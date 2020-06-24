@@ -26,7 +26,7 @@ SECRET_KEY = '!r$qgcyy+br0)&exh=tugz_&sd&=ih-3jsoarxu87_i2w*0zfc'
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 
-DEBUG = int(os.environ.get('DEBUG', default=1))
+DEBUG = int(os.environ.get('DEBUG', default=0))
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost']
 
@@ -139,3 +139,17 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'tracker_home'
 LOGIN_URL = 'login'
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
+
+CELERY_ACCEPT_CONTENT = ['json']
+CELRY_TASK_SERIALISER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'Asia/Almaty'
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'todo.tracker.dev@gmail.com' 
+EMAIL_HOST_PASSWORD = 'zhongguowansui666'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

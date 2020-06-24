@@ -4,6 +4,7 @@ from .views import PublicListView, TaskCreateView, \
     TaskUpdateView, TaskDeleteView, PrivateListView
 from django.conf.urls.i18n import i18n_patterns
 
+
 urlpatterns = [
     path('', PublicListView.as_view(), name='tracker_home'),
     path('create/', TaskCreateView.as_view(), name='create_task'),

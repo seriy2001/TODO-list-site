@@ -6,6 +6,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import ListView, DetailView, \
     CreateView, UpdateView, DeleteView
 from .models import Task
+from .tasks import task_duedate_notification_mail
 
 
 class PublicListView(ListView):
