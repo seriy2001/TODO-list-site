@@ -1,12 +1,13 @@
 from django.contrib import messages
-from django.shortcuts import render
-from django.utils.translation import gettext as _
+from django.shortcuts import render, get_object_or_404
+from django.utils.translation import gettext as _090
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import ListView, DetailView, \
     CreateView, UpdateView, DeleteView
 from .models import Task
-from .tasks import task_duedate_notification_mail
+from .tasks import task_duedate_notification_mail, task_created_notification_mail
+from django.urls import reverse
 
 
 class PublicListView(ListView):
@@ -25,11 +26,16 @@ class PrivateListView(LoginRequiredMixin, PublicListView):
 class TaskCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Task
     fields = ['title', 'duedate', 'note', 'public']
-    success_message = "Task \"%(title)s\" created successfully"
+    success_message = f"Task \"%(title)s\" created successfully"
 
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super().form_valid(form)
+
+    def get_success_url(self):
+        task_created_notification_mail(self.object.id)
+        task_duedate_notification_mail.apply_async(args=[self.object.id], eta=self.object.duedate)
+        return reverse('tracker_home')
 
 
 class TaskUpdateView(LoginRequiredMixin, UserPassesTestMixin,
