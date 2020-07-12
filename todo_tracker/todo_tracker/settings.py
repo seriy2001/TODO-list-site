@@ -85,9 +85,8 @@ WSGI_APPLICATION = 'todo_tracker.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dev',
+        'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': 'password',
         'HOST': 'db',
         'PORT': '5432',
     }
