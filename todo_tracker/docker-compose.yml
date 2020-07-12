@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    environment:
+        - POSTGRES_DB=dev
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=password
+
+  web:
+    build: .
+    command: gunicorn todo_tracker.wsgi
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+      - redis
+
+  redis:
+    image: "redis:latest"
+
+  celery:
+    build: .
+    command: celery -A todo_tracker worker -l info
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+      - redis
+      
