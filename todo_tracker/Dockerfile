@@ -12,4 +12,4 @@ RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
 
 EXPOSE 8000
-CMD gunicorn todo_tracker.wsgi:application --bind 0.0.0.0:$PORT
+# CMD gunicorn todo_tracker.wsgi:application --bind 0.0.0.0:$PORT
