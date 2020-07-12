@@ -31,3 +31,5 @@ services:
       - db
       - redis
       
+volumes:
+  postgres_data:
