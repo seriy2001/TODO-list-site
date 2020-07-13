@@ -7,7 +7,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = models.ImageField(default='default.jpg',
                               upload_to='profile_pics')
-    bio = models.CharField(max_length=1000, default=None,
+    bio = models.CharField(max_length=1000, default='',
                            blank=True, null=True)
 
     def __str__(self):
